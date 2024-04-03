@@ -2,20 +2,26 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lecture 5</title>
 <style>
   body {
     background-color: #013220;
     color: white;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
   }
   .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 20px;
   }
   h1 {
     text-align: center;
+  }
+  h2 {
+    font-size: 1.5em; /* 24px/16px */
   }
   .button {
     background-color: #046307;
@@ -25,9 +31,16 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1em; /* 16px/16px */
     margin: 4px 2px;
     cursor: pointer;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in element's width */
+  }
+  @media (min-width: 768px) {
+    .button {
+      width: auto; /* Auto width */
+    }
   }
 </style>
 </head>
