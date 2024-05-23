@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html>
-    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=664dea703a56e900196c14ad&product=sop' async='async'></script>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>edv quizz</title>
     <link rel="icon" href="https://cdn.13v.be/favicon.ico" type="image/x-icon">
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=664dea703a56e900196c14ad&product=sop' async='async'></script>
     <style>
         body {
             background-color: #006400;
             color: white;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1, h2 {
+            text-align: center;
+            margin: 20px 0;
         }
         .button {
             background-color: #4CAF50;
@@ -19,18 +30,37 @@
             text-decoration: none;
             display: block;
             font-size: 16px;
-            margin: 4px 2px;
+            margin: 10px 0;
             cursor: pointer;
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .share-buttons {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        @media (max-width: 600px) {
+            .button {
+                width: 90%;
+            }
+            body {
+                padding: 10px;
+            }
         }
     </style>
-     
 </head>
 <body>
     <h1>estructura del vocabulario - quizlet's</h1>
-    <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
+    <div class="share-buttons">
+        <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
+    </div>
     <h2>sinónimos</h2>
     <a href="https://quizlet.com/be/917752757/sinonimos-verbos-flash-cards/?i=38k0u6&x=1jqt" class="button" target="_blank">verbos</a>
     <a href="https://quizlet.com/be/917754055/sinonimos-sustantivos-flash-cards/?i=38k0u6&x=1jqt" class="button" target="_blank">sustantivos</a>
@@ -60,9 +90,5 @@
     <a href="https://quizlet.com/be/918795258/no-confundas-verbos-flash-cards/?i=38k0u6&x=1jqt" class="button" target="_blank">verbos</a>
     <a href="https://quizlet.com/be/918797314/no-confundas-adjetivos-flash-cards/?i=38k0u6&x=1jqt" class="button" target="_blank">adjetivos</a>
     <a href="https://quizlet.com/be/918802631/no-confundas-adverbios-y-preposiciones-flash-cards/?i=38k0u6&x=1jqt" class="button" target="_blank">adverbios y preposiciones</a>
-
-
-    
-    
 </body>
 </html>
