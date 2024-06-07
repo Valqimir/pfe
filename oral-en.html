@@ -21,19 +21,23 @@
             text-align: center;
             margin: 20px 0;
         }
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            width: 90%;
+            max-width: 1200px;
+        }
         .button {
             background-color: #4b0000; /* Couleur bordeaux plus foncé */
             border: none;
             color: white;
-            padding: 15px 32px;
+            padding: 15px 0;
             text-align: center;
             text-decoration: none;
             display: block;
             font-size: 16px;
-            margin: 10px 0;
             cursor: pointer;
-            width: 80%;
-            max-width: 400px;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
@@ -47,11 +51,8 @@
             margin: 20px 0;
         }
         @media (max-width: 600px) {
-            .button {
-                width: 90%;
-            }
-            body {
-                padding: 10px;
+            .button-container {
+                grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
             }
         }
     </style>
@@ -61,24 +62,25 @@
     <div class="share-buttons">
         <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
     </div>
-
-    <a href="https://www.6lm.site/en/oral/ethan" class="button" target="_blank">Ethan</a>
-    <a href="https://www.6lm.site/en/oral/fani" class="button" target="_blank">Fani</a>
-    <a href="https://www.6lm.site/en/oral/florence" class="button" target="_blank">Florence</a>
-    <a href="https://www.6lm.site/en/oral/hiba" class="button" target="_blank">Hiba</a>
-    <a href="https://www.6lm.site/en/oral/ilyas" class="button" target="_blank">Ilyas</a>
-    <a href="https://www.6lm.site/en/oral/ines-s" class="button" target="_blank">Ines-s</a>
-    <a href="https://www.6lm.site/en/oral/ines-v" class="button" target="_blank">Ines-v</a>
-    <a href="https://www.6lm.site/en/oral/jasmine" class="button" target="_blank">Jasmine</a>
-    <a href="https://www.6lm.site/en/oral/jessica" class="button" target="_blank">Jessica</a>
-    <a href="https://www.6lm.site/en/oral/lou" class="button" target="_blank">Lou</a>
-    <a href="https://www.6lm.site/en/oral/maria" class="button" target="_blank">Maria</a>
-    <a href="https://www.6lm.site/en/oral/nina" class="button" target="_blank">Nina</a>
-    <a href="https://www.6lm.site/en/oral/noah" class="button" target="_blank">Noah</a>
-    <a href="https://www.6lm.site/en/oral/robin" class="button" target="_blank">Robin</a>
-    <a href="https://www.6lm.site/en/oral/sory" class="button" target="_blank">Sory</a>
-    <a href="https://www.6lm.site/en/oral/vladimir" class="button" target="_blank">Vladimir</a>
-    <a href="https://www.6lm.site/en/oral/yasmina" class="button" target="_blank">Yasmina</a>
-    <a href="https://www.6lm.site/en/oral/yuliya" class="button" target="_blank">Yuliya</a>
+    <div class="button-container">
+        <a href="https://www.6lm.site/en/oral/ethan" class="button" target="_blank">Ethan</a>
+        <a href="https://www.6lm.site/en/oral/fani" class="button" target="_blank">Fani</a>
+        <a href="https://www.6lm.site/en/oral/florence" class="button" target="_blank">Florence</a>
+        <a href="https://www.6lm.site/en/oral/hiba" class="button" target="_blank">Hiba</a>
+        <a href="https://www.6lm.site/en/oral/ilyas" class="button" target="_blank">Ilyas</a>
+        <a href="https://www.6lm.site/en/oral/ines-s" class="button" target="_blank">Ines-s</a>
+        <a href="https://www.6lm.site/en/oral/ines-v" class="button" target="_blank">Ines-v</a>
+        <a href="https://www.6lm.site/en/oral/jasmine" class="button" target="_blank">Jasmine</a>
+        <a href="https://www.6lm.site/en/oral/jessica" class="button" target="_blank">Jessica</a>
+        <a href="https://www.6lm.site/en/oral/lou" class="button" target="_blank">Lou</a>
+        <a href="https://www.6lm.site/en/oral/maria" class="button" target="_blank">Maria</a>
+        <a href="https://www.6lm.site/en/oral/nina" class="button" target="_blank">Nina</a>
+        <a href="https://www.6lm.site/en/oral/noah" class="button" target="_blank">Noah</a>
+        <a href="https://www.6lm.site/en/oral/robin" class="button" target="_blank">Robin</a>
+        <a href="https://www.6lm.site/en/oral/sory" class="button" target="_blank">Sory</a>
+        <a href="https://www.6lm.site/en/oral/vladimir" class="button" target="_blank">Vladimir</a>
+        <a href="https://www.6lm.site/en/oral/yasmina" class="button" target="_blank">Yasmina</a>
+        <a href="https://www.6lm.site/en/oral/yuliya" class="button" target="_blank">Yuliya</a>
+    </div>
 </body>
 </html>
