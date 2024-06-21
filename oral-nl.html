@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oral - Néerlandais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Oral - Néerlandais
+    </header>
+    <div class="container">
+        <a href="https://watch.valqimir.com/acj/nederlands/examen/oral/consignes-oral-nl.jpg" class="button">consignes oral nl</a>
+        <!-- Génération des 25 boutons -->
+        <script>
+            const container = document.querySelector('.container');
+            for(let i = 1; i <= 25; i++) {
+                const button = document.createElement('a');
+                button.href = `https://watch.valqimir.com/acj/nederlands/examen/vocab-nl-${i}.jpg`;
+                button.className = 'button';
+                button.innerText = `vocab nl ${i}`;
+                container.appendChild(button);
+            }
+        </script>
+    </div>
+</body>
+</html>
